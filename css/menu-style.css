@@ -86,19 +86,15 @@ body {
   height: 70px;
   width: calc(100% - $sideBarWidth);
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: fixed;
   top: 0px;
@@ -116,15 +112,12 @@ body {
   position: relative;
   height: 70px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
@@ -139,11 +132,9 @@ body {
   width: 45px;
   height: 45px;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
@@ -158,7 +149,6 @@ body {
   padding-top: 0px;
   position: relative;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -172,7 +162,6 @@ body {
   background: #fff;
   position: relative;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -203,7 +192,6 @@ body {
   -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
   -webkit-transition: left 0.3s ease;
-  -o-transition: left 0.3s ease;
   transition: left 0.3s ease;
   z-index: 999;
   background-color: #ffffff;
@@ -231,8 +219,6 @@ body {
 }
 
 .container .sidebar .menu ul li.active {
-  background: -webkit-linear-gradient(180.02deg, rgba(113, 112, 112, 0.2) 0.02%, rgba(42, 42, 42, 0.2) 0.02%, rgba(215, 177, 34, 0) 85.79%, rgba(178, 178, 178, 0) 86.24%);
-  background: -o-linear-gradient(180.02deg, rgba(113, 112, 112, 0.2) 0.02%, rgba(42, 42, 42, 0.2) 0.02%, rgba(215, 177, 34, 0) 85.79%, rgba(178, 178, 178, 0) 86.24%);
   background: linear-gradient(269.98deg, rgba(113, 112, 112, 0.2) 0.02%, rgba(42, 42, 42, 0.2) 0.02%, rgba(215, 177, 34, 0) 85.79%, rgba(178, 178, 178, 0) 86.24%);
 }
 
@@ -240,32 +226,28 @@ body {
   background: url(./../img/icon-card-a.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li.active .icon.icon-rocket {
   background: url(./../img/icon-rocket-a.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li.active .icon.icon-file {
   background: url(./../img/icon-file-a.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li.active .icon.icon-card {
   background: url(./../img/icon-card-a.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li.active .hidden-menu {
@@ -278,8 +260,6 @@ body {
 
 .container .sidebar .menu ul li.treeview.open::after, .container .sidebar .menu ul li.treeview.active::after {
   -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-       -o-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
@@ -298,17 +278,13 @@ body {
   background: url(./../img/arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-       -o-transform: rotate(-90deg);
           transform: rotate(-90deg);
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: -o-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .container .sidebar .menu ul li.treeview .hidden-menu {
@@ -316,7 +292,6 @@ body {
   overflow: hidden;
   padding-left: 50px;
   -webkit-transition: max-height 0.3s ease-in;
-  -o-transition: max-height 0.3s ease-in;
   transition: max-height 0.3s ease-in;
 }
 
@@ -366,39 +341,34 @@ body {
   background: url(./../img/icon-card.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li .icon.icon-rocket {
   background: url(./../img/icon-rocket.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li .icon.icon-file {
   background: url(./../img/icon-file.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .sidebar .menu ul li .icon.icon-card {
   background: url(./../img/icon-card.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
 }
 
 .container .content {
   width: calc(100% - $sideBarWidth);
   margin-left: 220px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background-color: #F2F2F2;
   margin-top: 0px;
@@ -462,15 +432,13 @@ body {
 
 .container .breadcrumps ul {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0px;
   padding: 0px;
   list-style: none;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .breadcrumps ul li {
@@ -502,8 +470,7 @@ body {
   width: 14px;
   height: 12px;
   background-image: url(../img/home.png);
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -516,7 +483,6 @@ body {
 
 .page-content .searh-row {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
@@ -527,20 +493,16 @@ body {
 
 .page-content .filter-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -643,13 +605,11 @@ body {
   background: url(./../img/arrow-select.svg);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: -o-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
   border: none;
 }
@@ -660,8 +620,6 @@ body {
 
 .page-content .filter-wrapper .box .select2-container--krajee.select2-container--open .select2-selection--single .select2-selection__arrow {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
@@ -689,8 +647,6 @@ body {
 
 .page-content .filter-wrapper .box .drp-container input:focus ~ .help-block::after {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
@@ -704,13 +660,11 @@ body {
   background: url(./../img/arrow-select.svg);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: -o-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   z-index: 100;
   pointer-events: none;
 }
@@ -735,8 +689,6 @@ body {
 
 .page-content .filter-wrapper .box select:focus ~ .help-block::after {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
@@ -750,13 +702,11 @@ body {
   background: url(./../img/arrow-select.svg);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: -o-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   z-index: 100;
   pointer-events: none;
 }
@@ -772,7 +722,6 @@ body {
   text-decoration: none;
   border-radius: 20px 0px;
   -webkit-transition: all 0.50s ease;
-  -o-transition: all 0.50s ease;
   transition: all 0.50s ease;
   -webkit-box-shadow: 5px 5px 22px -4px rgba(0, 0, 0, 0.75);
           box-shadow: 5px 5px 22px -4px rgba(0, 0, 0, 0.75);
@@ -786,15 +735,12 @@ body {
   height: 50px;
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -805,11 +751,8 @@ body {
   background: url(./../img/arrow-white.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 

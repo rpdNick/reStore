@@ -91,3 +91,15 @@ jQuery(function ($) {
         });
     });
 });
+
+// one-anket-page
+let surveyPoint = $('.point-square .point').text() * 1;
+
+if (surveyPoint <= 6) {
+ $('.take-to-work').show();
+}
+
+$('.take-to-work').on('click', function(){
+    $(this).hide();
+    $('.complete-btn-wrapper').show();
+});
