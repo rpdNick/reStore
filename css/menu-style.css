@@ -566,6 +566,16 @@ body {
   border-bottom: 1px solid #BEBEBE;
 }
 
+.page-content .filter-wrapper .box .f-name-height {
+  min-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .page-content .filter-wrapper .box .form-control.select2-hidden-accessible {
   display: none;
 }
