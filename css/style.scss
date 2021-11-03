@@ -1417,6 +1417,38 @@ $maincolor: #FF0079;
     }
 }
 
+@media screen and (max-width: 860px) {
+    .container {
+        .page-content {
+            .profile-header {
+                .profile-wrapepr {
+                    backdrop-filter: unset;
+                    .profile-info-box {
+                        width: 100%;
+                        .info-row {
+                            flex-direction: column;
+                            width: 100%;
+                            margin-bottom: 0;
+                            .info-item {
+                                width: 100%;
+                                min-width: 100%;
+                                margin-bottom: 20px;
+                            }
+                            .info-item:first-child {
+                                width: 100%;
+                                min-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container .page-content .comment-container p {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container {
         .page-content {
