@@ -13,6 +13,7 @@
 
 <body>
     <div class="container">
+
         <div class="header">
             <div class="navbar-aside">
                 <div class="mobile-menu btn-aside-menu toggle-sidebar">
@@ -90,8 +91,8 @@
             </div>
         </div>
         <div class="content" id="content">
-            <div class="page-content">
-                <form action="">
+            <form action="">
+                <div class="page-content">
                     <div class="one-anket-header">
                         <div class="pink-block profile-header">
                             <div class="page-header">
@@ -101,10 +102,11 @@
                                 <div class="profile-photo-box">
                                     <span class="photo-title">Профиль клиента</span>
                                     <div class="photo-container">
-                                        <img class="user-img" src="./img/user.svg" alt="user">
+                                        <img class="user-img" id="profileImage" src="./img/user.svg" alt="user">
                                         <div class="edit">
                                             <i class="edit-con"></i>
                                         </div>
+                                        <input id="imageUpload" type="file" name="profile_photo" capture>
                                     </div>
                                 </div>
                                 <div class="profile-info-box">
@@ -186,10 +188,50 @@
                     </div>
                     <div class="comment-container">
                         <p>Уважаемая Татьяна!</p>
-                        <textarea class="comment-field" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="comment-field" name="" id=""></textarea>
+                        <div class="send-btn-wrp">
+                            <button type="button" class="send-btn">Отправить</button>
+                        </div>
                     </div>
-                </form>
-            </div>
+                    <div class="alert-history-container">
+                        <p class="answer-title">История обработки Алерта</p>
+                        <div class="history-item">
+                            <p class="history-item-name">Время события:</p>
+                            <p class="history-item-data">05-10-2021 12:00:32</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">ФИО:</p>
+                            <p class="history-item-data">Синцова Татьяна</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">Действие:</p>
+                            <p class="history-item-data">Взял в работу</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">Время взятия в работу:</p>
+                            <p class="history-item-data">05-10-2021 12:00</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">Время закрытия Алерта:</p>
+                            <p class="history-item-data">06-10-2021 15:30</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">ФИО:</p>
+                            <p class="history-item-data">Синцова Татьяна</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">Действие:</p>
+                            <p class="history-item-data">Закрыл Алерт</p>
+                        </div>
+                        <div class="history-item">
+                            <p class="history-item-name">Комментарий о выполненой работе:</p>
+                            <p class="history-item-data alert-comment">Спасибо, что приняли участие в опросе об уровне
+                                нашего сервиса. Мы всегда стремимся к высокому уровню обслуживания клиентов и нам очень
+                                жаль, что вы не увидели заинтересованности от наших сотрудников</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <script src="./js/script.js"></script>

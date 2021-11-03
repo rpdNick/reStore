@@ -92,7 +92,32 @@ jQuery(function ($) {
     });
 });
 
-// one-anket-page
+
+/* one-anket-page */
+
+
+// change profile image
+$(".edit").click(function(e) {
+    $("#imageUpload").click();
+});
+
+function photoPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    }
+}
+
+$("#imageUpload").change(function(){
+    photoPreview( this );
+});
+
+
+
+
+
+
+
 let surveyPoint = $('.point-square .point').text() * 1;
 
 if (surveyPoint <= 6) {
@@ -102,4 +127,14 @@ if (surveyPoint <= 6) {
 $('.take-to-work').on('click', function(){
     $(this).hide();
     $('.complete-btn-wrapper').show();
+    $('.comment-container').fadeIn();
+});
+
+$('.send-btn').on('click', function(){
+    // let comment = $('.comment-field').val();
+    // $('.alert-comment').text(comment)
+
+    $('.comment-container').hide();
+    $('.complete-btn-wrapper').hide();
+    $('.alert-history-container').fadeIn();
 });
