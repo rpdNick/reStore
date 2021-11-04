@@ -115,10 +115,8 @@ $("#imageUpload").change(function () {
 
 
 
-
-
-
 let surveyPoint = $('.point-square .point').text() * 1;
+let form = $('#anket-form');
 
 if (surveyPoint <= 6) {
     $('.take-to-work').show();
@@ -140,6 +138,7 @@ $('.send-btn').on('click', function (evt) {
         $('.comment-container').hide();
         $('.complete-btn-wrapper').hide();
         $('.alert-history-container').fadeIn();
+        // form.submit();
     }
 
 });
